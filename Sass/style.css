@@ -1,10 +1,17 @@
-/* @import "vars.scss"; */
-/* @import "header.scss"; */
+/* @import "_vars.scss";
+@import "header.scss";
+@import "navbar.scss";
+@import "productos.scss";
+@import "footer";
+@import "responsive.scss";
+@import "button.scss";
+ */
 /* vars */
 body {
   background-color: #ff80ab;
 }
 
+/* header */
 #grid-container {
   display: -ms-grid;
   display: grid;
@@ -67,6 +74,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* navbar */
 nav {
   background-color: #c94f7c;
   -ms-grid-row: 2;
@@ -132,6 +140,7 @@ nav ul li ul li a:hover {
   background-color: black;
 }
 
+/* productos */
 #productos1 {
   margin-top: 15px;
   background-color: #ff80ab;
@@ -187,6 +196,7 @@ nav ul li ul li a:hover {
           transform: scale(1.1);
 }
 
+/* footer */
 footer {
   background-color: #b0003a;
   -ms-grid-row: 5;
@@ -209,6 +219,71 @@ footer .info-pie p {
   font-family: 'Shadows Into Light', cursive;
 }
 
+section .catalogo div .btn, section .catalogo div .btn-producto1, section .catalogo div .btn-producto2, section .catalogo div .btn-producto3, section .catalogo div .btn-producto4, section .catalogo div .btn-producto5, section .catalogo div .btn-producto6 {
+  /* 				width: 150px; */
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+section .catalogo div .btn-producto1 {
+  background-color: #ffb732;
+  border-radius: 3px;
+  width: 140px;
+  height: 47px;
+}
+
+section .catalogo div .btn-producto2 {
+  background-color: #ffb732;
+  border-radius: 6px;
+  width: 130px;
+  height: 44px;
+}
+
+section .catalogo div .btn-producto3 {
+  background-color: #ffb732;
+  border-radius: 9px;
+  width: 120px;
+  height: 41px;
+}
+
+section .catalogo div .btn-producto4 {
+  background-color: #ffb732;
+  border-radius: 12px;
+  width: 110px;
+  height: 38px;
+}
+
+section .catalogo div .btn-producto5 {
+  background-color: #ffb732;
+  border-radius: 15px;
+  width: 100px;
+  height: 35px;
+}
+
+section .catalogo div .btn-producto6 {
+  background-color: #ffb732;
+  border-radius: 18px;
+  width: 90px;
+  height: 32px;
+}
+
+/* section{
+	.catalogo{
+		div{
+			.btn-producto2 {
+                @extend .btn;
+				background-color:rgb(115, 0, 255);
+			}
+		}
+
+	}
+}
+ */
+/* responsive */
 @media screen and (min-width: 768px) {
   #grid-container {
     -ms-grid-columns: 1fr 1fr 1fr;
