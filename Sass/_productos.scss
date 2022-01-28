@@ -1,0 +1,90 @@
+/* productos */
+#productos1{
+    margin-top: 15px;
+    background-color:$color-fondo-ppal ;
+    grid-area: contenido1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    .catalogo:hover{
+        transform: scale(1.1);
+    }
+}
+
+#productos2{
+    margin-top: 15px;
+    background-color:$color-fondo-ppal ;
+    grid-area: contenido2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    .catalogo:hover{
+        transform: scale(1.1);
+    }
+}
+
+section{
+	.catalogo{
+		div{
+			.btn {
+/* 				width: 150px; */
+				height: 50px;
+				border: 1px solid black;
+				border-radius: 50px;
+				color: black;
+				background-color:white;
+				text-align:center;
+			}
+		}
+
+	}
+}
+
+@for $i from 1 to 7 {
+    
+    section{
+        .catalogo{
+            div{
+                .btn-producto#{$i} {
+                    @extend .btn;
+                    background-color:rgb(255, 183, 50);
+                    border-radius: 3px*$i;
+                    width: 150px-($i*10);
+                    height: 50px-($i*3);
+
+                }
+            }
+
+        }
+    }
+}
+
+
+@mixin flexs-center{
+    display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+
+#productos1{
+    .catalogo{
+        .contenedor-boton{
+            @include flexs-center
+        }
+    }
+}
+
+#productos2{
+    .catalogo{
+        .contenedor-boton{
+            @include flexs-center
+        }
+    }
+}
+
