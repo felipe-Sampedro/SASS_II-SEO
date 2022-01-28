@@ -207,18 +207,78 @@ section{
 
 
 
-/* section{
-	.catalogo{
-		div{
-			.btn-producto2 {
-                @extend .btn;
-				background-color:rgb(115, 0, 255);
-			}
-		}
-
-	}
+@mixin flexs-center{
+    display: flex;
+	flex-direction: row;
+	justify-content:center;
 }
- */
+
+
+#productos1{
+    .catalogo{
+        .contenedor-boton{
+            @include flexs-center
+        }
+    }
+}
+
+#productos2{
+    .catalogo{
+        .contenedor-boton{
+            @include flexs-center
+        }
+    }
+}
+
+
+
+
+$bg-redes-footer:(
+    facebook:#3a5795,
+    instagram:magenta,  
+    twitter:lightblue,
+    whatsapp:rgb(55, 230, 46)
+);
+
+@each $social,$color in $bg-redes-footer {
+    .fondo-#{$social}{
+        background-color:$color;
+    }
+}
+
+#pie{
+    .info-icons{
+        div{
+            i{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+
+
+#pie{
+    .info-icons{
+        @include flexs-center;
+        align-items:center
+    }
+}
+
+
+
+#pie{
+    .info-icons{
+        .fondo{
+            i{
+                @include flexs-center;
+                align-items: center;
+            }
+        }
+    }
+}
+
 
 
 /* responsive */

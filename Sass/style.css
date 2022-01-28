@@ -271,18 +271,85 @@ section .catalogo div .btn-producto6 {
   height: 32px;
 }
 
-/* section{
-	.catalogo{
-		div{
-			.btn-producto2 {
-                @extend .btn;
-				background-color:rgb(115, 0, 255);
-			}
-		}
-
-	}
+#productos1 .catalogo .contenedor-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
- */
+
+#productos2 .catalogo .contenedor-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fondo-facebook {
+  background-color: #3a5795;
+}
+
+.fondo-instagram {
+  background-color: magenta;
+}
+
+.fondo-twitter {
+  background-color: lightblue;
+}
+
+.fondo-whatsapp {
+  background-color: #37e62e;
+}
+
+#pie .info-icons div i {
+  width: 80px;
+  height: 80px;
+}
+
+#pie .info-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pie .info-icons .fondo i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* responsive */
 @media screen and (min-width: 768px) {
   #grid-container {
